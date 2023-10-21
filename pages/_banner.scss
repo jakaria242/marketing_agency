@@ -1,0 +1,41 @@
+#banner{
+    position: relative;
+    .banner__image picture img{
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        overflow: hidden;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+    .banner__heading{
+        font-size: 70px;
+        width: 720px;
+        font-family: $secondary__font;
+        line-height: 140%;
+        color:white;
+        padding-top: 148px;
+    }
+    .banner__text{
+        @include peragraph(430px,32px 0 50px 0,#fff,);
+    }
+    .banner__btn{
+        padding: 10px 40px;
+        background-color: transparent;
+        border-radius: 8px;
+        text-transform: capitalize;
+        font-family: #000;
+        font-size: 20px;
+        font-weight: 600;
+        transition: all linear 0.3s;
+        display: inline-block;
+        border: 1px solid #ffffff;
+        color: whitesmoke;
+            &:hover{
+                background: linear-gradient(90deg, #8D5BEA 0%, #704CD6 100%);
+                color: white;
+            }
+
+    }
+}

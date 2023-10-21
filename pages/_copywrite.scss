@@ -1,0 +1,48 @@
+#copywrite{
+    padding: 20px 0;
+    background-color: #F1F1F1;
+    .copywrite__wrapper{
+        display: flex;
+        justify-content: space-between;
+        .copywrite__lert{
+            h4{
+                color: #4D4D4D;
+                font-family: $primary__font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+        }
+        .copywrite__right{
+            display: flex;
+            column-gap: 20px;
+            h5{
+                color: #554C8A;
+                font-family: $primary__font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: " ";
+                    height: 25px;
+                    width: 2px;
+                    background-color: #554C8A;
+                    left: 106%;
+                }
+            }
+            h6{
+                color: #554C8A;
+                font-family: $primary__font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+    }
+}

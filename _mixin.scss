@@ -1,0 +1,39 @@
+@mixin peragraph($width,$padding,$color){
+    font-family: $primary__font;
+    font: size 20px;;
+    font-weight: 400;
+    color:$color;
+    line-height: 150%;
+    width: $width;
+    padding:$padding;
+    text-transform: capitalize;
+}
+@mixin btn($mb,$mt){
+    padding: 10px 40px;
+    background-color: transparent;
+    border-radius: 8px;
+    text-transform: capitalize;
+    font-family: #000;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all linear 0.3s;
+    display: inline-block;
+    margin-bottom:$mb;
+    margin-top: $mt;
+    border: 1px solid #000;
+    &:hover{
+        background: linear-gradient(90deg, #8D5BEA 0%, #704CD6 100%);
+        color: white;
+    }
+}
+@mixin title($fontsize, $width, $mt, $mb){
+    font-family: $secondary__font;
+    font-size: $fontsize;
+    font-weight: 700;
+    line-height: 150%;
+    color: $primary__color;
+    text-transform: capitalize;
+    width: $width;
+    margin-top: $mt;
+    margin-bottom: $mb;
+}

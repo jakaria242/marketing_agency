@@ -1,0 +1,51 @@
+#rating{
+    padding: 80px 0;
+    background-color: #F6F6F6;
+    .rating__title{
+        h3{
+            font-family: $secondary__font;
+            font-size: $font__40px;
+            color: $primary__color;
+            font-weight: 700;
+            text-align: center;
+            text-transform: capitalize;
+            margin-bottom: 50px;
+        }
+        .rating__wrapper{
+            display: flex;
+            column-gap: 60px;
+            .raing__box{
+                width: 399px;
+                height: 296px;
+                padding: 43px 40px;
+                border: 2px solid #000;
+                border-radius: 8px;
+                position: relative;
+                text-align: center;
+                transition: all linear 0.3s;
+                img{
+                    position: absolute;
+                    left: 30%;
+                }
+                p{
+                    @include peragraph(null,80px 0 20px 0,null)
+                }
+                h6{
+                    font-family: $secondary__font;
+                    font-size: $font__18;
+                    color: $primary__color;
+                    font-weight: 400;
+                    text-align: center;
+                    transition: all linear 0.3s;
+                }
+                &:hover{
+                    background-color: $primary__color;
+                    color: #F6F6F6;
+                }
+                &:hover h6{
+                    color: #F6F6F6;
+                }
+            }
+        }
+    }
+}

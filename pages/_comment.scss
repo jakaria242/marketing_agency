@@ -1,0 +1,50 @@
+#comment{
+    padding: 120px 0 0 0;
+    position: relative;
+    .left__image{
+        width:1087px;
+        height: 488px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 0px 244px 244px 0px;
+        }
+    }
+    .comment__box{
+        position: relative;
+        .right__content{
+            position: absolute;
+            top: -445px;
+            right: 0;
+            h3{
+                @include title(36px, 390px,32px,0);
+            }
+            p{
+                @include peragraph(315px,40px 0 0 0, 0);
+            }
+            a{
+                @include btn(0,50px);
+            }
+        }
+    }
+    .question__box{
+        display: flex;
+        column-gap: 107px;
+        padding: 100px 0 120px 0;
+        .question__left{
+            width: 536px;
+            .icon{
+                display: flex;
+                column-gap: 16px;
+                h4{
+                    @include title($font__24,383px,0,24px);
+                }
+                p{
+                    @include peragraph(475px,0 0 20px 0,null);
+                }
+            }
+        }
+    }
+}

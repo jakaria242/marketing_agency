@@ -1,0 +1,42 @@
+#navbar{
+    padding: 31px 0;
+    .navbar__wrapper{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        .navbar__menu-wrapper{
+            display: flex;
+            column-gap: 40px;
+            .navbar__item a{
+                text-transform: capitalize;
+                font-size: 18px;
+                font-weight:400;
+                font-family: $primary__font;
+                color: #000;
+                transition: all linear 0.3s;
+                display: inline-block;
+                &:hover{
+                    color: #955EF0;
+                    background-color: red($color: #000000);
+                    transform: scale(1.11);
+                    font-weight: bold;
+                }
+            }
+        }
+        .navbar__btn{
+            height: 41px;
+            width: 371px;
+            border-radius: 100px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            padding: 13px 23px;
+            h3{
+                font-size: 14px;
+                font-weight: 400;
+                color:$primary__color;
+            }
+        }
+    }
+}
